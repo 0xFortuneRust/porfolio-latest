@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!----------
+Project Name: Modern Portfolio Website
+Description: A complete responsive modern portfolio website design
+             by using HTML CSS and Vanilla JavaScript from scratch.
+Author: Md Al Amin Hossen
+Github: https://github.com/MdRasen
+License: MIT License
+Copyright: 2023 ©MdRasen 
+---------->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MdRasen - Modern Portfolio Website</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog-single.css">
+  <link rel="stylesheet" href="css/skins/color-1.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Style Switcher -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+
+  <link rel="stylesheet" href="css/style-switcher.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/fabicon.png" />
+</head>
+
+<body class="dark">
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Aside Start -->
+    <div class="aside">
+      <div class="logo">
+        <a href="index.html"><span>F</span>.rust</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#service"><i class="fa fa-list"></i> Services</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fa fa-briefcase"></i> Projects</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Aside End -->
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <!-- Home Section Start -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Hello, my name is <span class="name">Tonny Jansen</span>
+              </h3>
+              <h3 class="my-profession">
+                I'm a <span class="typing"></span>
+              </h3>
+              <p>
+                I'm a developer with extensive experience for over 8
+                years. My expertise includes Web Development, Mobile
+                Development, Game Development, Web3 Development, and many more...
+              </p>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/hero.png" alt="hero" width="300" height="450" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!-- About Section Start -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm Tonny Jansen and <span>Web | Mobile | Game | Web3 Developer</span></h3>
+                  <p>
+                    As an experienced developer, I've contributed to various
+                    projects across different domains. Rather than listing all my
+                    credentials here, I invite you to explore my portfolio and
+                    past work. If you're looking to expand your team or seeking
+                    additional developers, I'd love to collaborate and achieve
+                    success together.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h5>React</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="90%"></div>
+                        <div class="skill-percent">90%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>React Native</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="85%"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Rust</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="80%"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Solidity</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="75%"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h5>Node.js</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="88%"></div>
+                        <div class="skill-percent">88%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Flutter</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="82%"></div>
+                        <div class="skill-percent">82%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Web3</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="78%"></div>
+                        <div class="skill-percent">78%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Blockchain</h5>
+                      <div class="progress">
+                        <div class="progress-in" data-width="80%"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2014 - 2018
+                          </h3>
+                          <h4 class="timeline-title">
+                            FPT University
+                          </h4>
+                          <p class="timeline-text">
+                            Bachelor Degree of Computer Science
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2024 - 2025
+                          </h3>
+                          <h4 class="timeline-title">
+                            Dead Bear Inc, 0XFX PTD 
+                          </h4>
+                          <p class="timeline-text">
+                            I participate in all phases of the software development lifecycle, 
+                            from design to deployment. I build and optimize web and mobile applications 
+                            using modern backend and frontend technologies. I collaborate with 
+                            cross-functional teams using Agile practices, code reviews, and testing 
+                            methodologies. I continuously improve performance, reliability, and code 
+                            quality while adopting new technologies.
+                          </p>
+                        </div>
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2022 - 2024
+                          </h3>
+                          <h4 class="timeline-title">
+                            Stakit
+                          </h4>
+                          <p class="timeline-text">
+                            I built the Stakit Raiding System backend in Rust, implementing a customizable 
+                            point-based reward system driven by Twitter engagement actions. I designed and 
+                            developed a scalable Solana NFT staking microservice in Rust, integrated with 
+                            existing backend systems for staking operations and data persistence. I expanded 
+                            and secured the Solana NFT staking smart contract to support on-chain NFT lockups, 
+                            reward calculation, and withdrawals. The system supports flexible reward models 
+                            with seamless backend integration.
+                          </p>
+                        </div>
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2019 - 2021
+                          </h3>
+                          <h4 class="timeline-title">
+                            Mad Dog Car Club  
+                          </h4>
+                          <p class="timeline-text">
+                            I developed and optimized React and Next.js components, improving development speed by 9%. 
+                            I led best-practice implementation across teams, reducing rework by 23% and operational costs 
+                            by 15%. I introduced database caching and structured RESTful and serverless backends, 
+                            increasing performance and user engagement by 30%. I improved overall software quality by 
+                            fixing 150+ bugs across multiple backend and cloud technologies.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Services Section Start -->
+      <section class="service section" id="service">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Services item -->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>Web Development</h4>
+                <p>
+                  Building responsive and scalable web applications using modern
+                  frameworks and technologies for optimal user experience.
+                </p>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Mobile Development</h4>
+                <p>
+                  Creating native and cross-platform mobile applications for iOS
+                  and Android with smooth performance and intuitive interfaces.
+                </p>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-gamepad"></i>
+                </div>
+                <h4>Game Development</h4>
+                <p>
+                  Developing engaging games including casino and slot games using
+                  Unity, Unreal Engine, and modern game development frameworks
+                  for various platforms.
+                </p>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-cube"></i>
+                </div>
+                <h4>Web3 Development</h4>
+                <p>
+                  Building decentralized applications (dApps) and smart
+                  contracts on blockchain networks with cutting-edge Web3
+                  technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section End -->
+
+      <!-- Projects Section Start -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Projects</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="projects-heading padd-15">
+              <h2>My Recent Projects :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="projects-filter padd-15">
+              <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+                <button class="filter-btn" data-filter="web3">Web3</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Menaji</h4>
+                <div class="image">
+                  <img src="images/portfolio/menaji.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  U.S. based e-commerce platform that offers high-definition cosmetics and advanced skincare products
+                  for men.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web</span>
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">Shopify</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1" data-images='["images/portfolio/menaji.png"]'
+                    data-title="Menaji"
+                    data-description="U.S. based e-commerce platform that offers high-definition cosmetics and advanced skincare products for men."
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://www.menaji.com/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="mobile">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Monsta Tapwar</h4>
+                <div class="image">
+                  <img src="images/portfolio/tapwar.png" alt="Mobile App Development">
+                </div>
+                <p class="project-description">
+                  Reach longest Combo
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Mobile</span>
+                  <span class="project-tag">React Native</span>
+                  <span class="project-tag">iOS</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="2"
+                    data-images='["images/portfolio/tapwar.png","images/portfolio/tapwar1.png","images/portfolio/tapwar2.png"]'
+                    data-title="Monsta Tapwar" data-description="Reach longest Combo" title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://play.google.com/store/apps/details?id=com.shani.tapwar" target="_blank"
+                    rel="noopener noreferrer" class="project-live-btn" title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="game">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Casino Slot Game</h4>
+                <div class="image">
+                  <img src="images/portfolio/slotmachine1.png" alt="Casino Slot Game">
+                </div>
+                <p class="project-description">
+                  More than 120 slot machine games on this game server
+                  - username: testuser1
+                  - password: 12345678
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Game</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                  <span class="project-tag">Casino</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="3"
+                    data-images='["images/portfolio/slotmachine.png","images/portfolio/slotmachine1.png","images/portfolio/slotmachine2.png"]'
+                    data-title="Casino Slot Game"
+                    data-description="More than 120 slot machine games on this game server" title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://www.finfrenzygames.net/login" target="_blank" rel="noopener noreferrer"
+                    class="project-live-btn" title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web3">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Ethereum Token Launchpad</h4>
+                <div class="image">
+                  <img src="images/portfolio/ape-store.png" alt="Web3 DApp Platform">
+                </div>
+                <p class="project-description">
+                  Fork pump.fun on EVM blockchain
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web3</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                  <span class="project-tag">Solidity</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="4"
+                    data-images='["images/portfolio/ape-store.png","images/portfolio/ape-store1.png","images/portfolio/ape-store2.png"]'
+                    data-title="Ethereum Token Launchpad" data-description="Fork pump.fun on EVM blockchain"
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://ape.store/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Sleepsia</h4>
+                <div class="image">
+                  <img src="images/portfolio/SleepSia.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  Highest Rated Bamboo Pillow!
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web</span>
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">Shopify</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1" data-images='["images/portfolio/SleepSia.png"]'
+                    data-title="Sleepsia" data-description="Highest Rated Bamboo Pillow!" title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://www.sleepsia.com/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="game web3">
+              <div class="projects-item-inner">
+                <h4 class="project-name">CroCrash</h4>
+                <div class="image">
+                  <img src="images/portfolio/crocrash.png" alt="Mobile App Development">
+                </div>
+                <p class="project-description">
+                  Letting users deoposit the CRO into the vault and start the betting.
+                  Exiciting and addicting impulse to users, whether between Crash-Out or Cash-Out.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Game</span>
+                  <span class="project-tag">Web3</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                  <span class="project-tag">Solana</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="2"
+                    data-images='["images/portfolio/crocrash.png","images/portfolio/crocrash1.png","images/portfolio/crocrash2.png"]'
+                    data-title="CroCrash" data-description="Crash game on Solana." title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://crocrash.io/" target="_blank"
+                    rel="noopener noreferrer" class="project-live-btn" title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="mobile">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Panda & Fruit Farm</h4>
+                <div class="image">
+                  <img src="images/portfolio/taste-main.png" alt="Mobile App Development">
+                </div>
+                <p class="project-description">
+                  Casual Fun
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Mobile</span>
+                  <span class="project-tag">React Native</span>
+                  <span class="project-tag">iOS</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="2"
+                    data-images='["images/portfolio/taste.png","images/portfolio/taste1.png","images/portfolio/taste2.png"]'
+                    data-title="Panda & Fruit Farm" data-description="Casual Fun" title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://play.google.com/store/apps/details?id=com.shani.tapwar" target="_blank"
+                    rel="noopener noreferrer" class="project-live-btn" title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web3">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Pump Science</h4>
+                <div class="image">
+                  <img src="images/portfolio/science.png" alt="Web3 DApp Platform">
+                </div>
+                <p class="project-description">
+                  Token launchpad and Gamified longevity research platform
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web3</span>
+                  <span class="project-tag">Rust</span>
+                  <span class="project-tag">Anchor</span>
+                  <span class="project-tag">Solana</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="4"
+                    data-images='["images/portfolio/science.png","images/portfolio/science1.png","images/portfolio/science2.png"]'
+                    data-title="Pump Science"
+                    data-description="Token launchpad and Gamified longevity research platform" title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://pump.science/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Grey</h4>
+                <div class="image">
+                  <img src="images/portfolio/greyco.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  Inclusive global banking designed just for you
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web</span>
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">Shopify</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1" data-images='["images/portfolio/grey.png"]'
+                    data-title="Web Application Project"
+                    data-description="A modern web application built with React and Node.js, featuring responsive design and real-time updates."
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://grey.co/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web game">
+              <div class="projects-item-inner">
+                <h4 class="project-name">GoalPost</h4>
+                <div class="image">
+                  <img src="images/portfolio/goalpost.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  Poker platform for the multi user on Solana.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web</span>
+                  <span class="project-tag">Game</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                  <span class="project-tag">Solana</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1"
+                    data-images='["images/portfolio/goalpost.png","images/portfolio/goalpost1.png"]'
+                    data-title="GoalPost" data-description="Poker platform for the multi user on Solana."
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://goalpost.gg/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web3">
+              <div class="projects-item-inner">
+                <h4 class="project-name">Agents Land</h4>
+                <div class="image">
+                  <img src="images/portfolio/agents.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  Pump.fun forking platform on Solana.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                  <span class="project-tag">Solana</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1"
+                    data-images='["images/portfolio/agents.png","images/portfolio/agents1.png","images/portfolio/agents2.png"]'
+                    data-title="Agents Land" data-description="Pump.fun forking platform on Solana."
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://agents.land/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="web">
+              <div class="projects-item-inner">
+                <h4 class="project-name">WeDance</h4>
+                <div class="image">
+                  <img src="images/portfolio/wedance.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  WeDance is online dance streaming platform.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Web</span>
+                  <span class="project-tag">Nuxt.js</span>
+                  <span class="project-tag">Tailwind</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1"
+                    data-images='["images/portfolio/wedance.png","images/portfolio/wedance1.png","images/portfolio/wedance2.png"]'
+                    data-title="WeDance" data-description="WeDance is online dance streaming platform."
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://wedance.vip/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="mobile">
+              <div class="projects-item-inner">
+                <h4 class="project-name">G-Plan</h4>
+                <div class="image">
+                  <img src="images/portfolio/gplan.png" alt="Web Application Project">
+                </div>
+                <p class="project-description">
+                  G-Plans is fitness mobile application.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Mobile</span>
+                  <span class="project-tag">IOS</span>
+                  <span class="project-tag">Android</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="1"
+                    data-images='["images/portfolio/gplan.png","images/portfolio/gplan1.png","images/portfolio/gplan2.png"]'
+                    data-title="G-Plan" data-description="G-Plans is fitness mobile application." title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://g-plans.com/" target="_blank" rel="noopener noreferrer" class="project-live-btn"
+                    title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projects item -->
+            <div class="projects-item padd-15" data-category="mobile">
+              <div class="projects-item-inner">
+                <h4 class="project-name">WhotAfrica</h4>
+                <div class="image">
+                  <img src="images/portfolio/whot-main.png" alt="Flutter Mobile App">
+                </div>
+                <p class="project-description">
+                  Bid and win Prize
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Mobile</span>
+                  <span class="project-tag">Flutter</span>
+                  <span class="project-tag">Dart</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-view-btn" data-project="6"
+                    data-images='["images/portfolio/whot.png","images/portfolio/whot1.png","images/portfolio/whot2.png"]'
+                    data-title="Flutter Mobile App"
+                    data-description="A beautiful mobile application developed with Flutter framework, offering native performance and modern UI design."
+                    title="View Project">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                  <a href="https://play.google.com/store/apps/details?id=com.codlwallet&pcampaignid=web_share"
+                    target="_blank" rel="noopener noreferrer" class="project-live-btn" title="Go Live">
+                    <i class="fa fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="view-all-btn-container padd-15">
+              <button class="view-all-btn" id="viewAllBtn">
+                View All <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section End -->
+
+      <!-- Project Modal Start -->
+      <div class="project-modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close" id="modalClose">
+            <i class="fa fa-times"></i>
+          </button>
+          <button class="modal-nav modal-prev" id="modalPrev">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="modal-nav modal-next" id="modalNext">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+          <div class="modal-image-container">
+            <img id="modalImage" src="" alt="Project Image">
+          </div>
+          <div class="modal-info">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <div class="modal-counter">
+              <span id="currentImage">1</span> / <span id="totalImages">1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Modal End -->
+
+      <!-- Contact Section Start -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Do You Have Any Questions?</h3>
+          <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+          <div class="row contact-info">
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <a href="mailto:jimmybrink112.dk@gmail.com" class="contact-icon-link" title="Send Email"
+                aria-label="Send Email">
+                <div class="icon-wrapper">
+                  <div class="icon"><i class="fa fa-envelope"></i></div>
+                </div>
+              </a>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <a href="https://github.com/0xFortuneRust" target="_blank" rel="noopener noreferrer" class="contact-icon-link"
+                title="Visit GitHub Profile" aria-label="Visit GitHub Profile">
+                <div class="icon-wrapper">
+                  <div class="icon"><i class="fa-brands fa-github"></i></div>
+                </div>
+              </a>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <a href="https://t.me/FortuneRust" target="_blank" rel="noopener noreferrer" class="contact-icon-link"
+                title="Contact on Telegram" aria-label="Contact on Telegram">
+                <div class="icon-wrapper">
+                  <div class="icon"><i class="fa-brands fa-telegram"></i></div>
+                </div>
+              </a>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <a href="https://x.com/0xFortuneRust" target="_blank" rel="noopener noreferrer" class="contact-icon-link"
+                title="Follow on Twitter" aria-label="Follow on Twitter">
+                <div class="icon-wrapper">
+                  <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">
+            I'M VERY RESPONSIVE TO MESSAGES
+          </h4>
+          <!-- Contact form -->
+          <div class="row">
+            <div class="contact-form padd-15">
+              <form id="contactForm" action="https://formsubmit.co/jimmybrink112.dk@gmail.com" method="POST">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="text" id="contactName" name="name" class="form-control" placeholder="Name"
+                        required />
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="email" id="contactEmail" name="email" class="form-control" placeholder="Email"
+                        required />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="Subject"
+                        required />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea id="contactMessage" name="message" class="form-control" placeholder="Message"
+                        required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+  <!-- Style Switcher Start -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- Style Switcher End -->
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
+</body>
+
+</html>
